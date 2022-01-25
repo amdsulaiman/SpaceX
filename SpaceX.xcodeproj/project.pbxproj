@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C03C4CB26A3E88B0042C244 /* OnboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C03C4CA26A3E88B0042C244 /* OnboardCollectionViewCell.swift */; };
+		5C0E2B23269C701E0037C3EC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E2B22269C701E0037C3EC /* APIClient.swift */; };
+		5C0E2B25269C702A0037C3EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E2B24269C702A0037C3EC /* Constants.swift */; };
+		5C0E2B29269C80E10037C3EC /* LaunchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E2B28269C80E10037C3EC /* LaunchDataModel.swift */; };
+		5C0E2B34269C81D20037C3EC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E2B33269C81D20037C3EC /* Global.swift */; };
+		5C0E2B38269C824B0037C3EC /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E2B37269C824B0037C3EC /* Date + Extensions.swift */; };
+		5C0E2B3A269C828A0037C3EC /* DateFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E2B39269C828A0037C3EC /* DateFormats.swift */; };
+		5C17201726A26D3E009B6182 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17201526A26D3E009B6182 /* HistoryTableViewCell.swift */; };
+		5C17201826A26D3E009B6182 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17201626A26D3E009B6182 /* HistoryTableViewCell.xib */; };
+		5C17201B26A2931F009B6182 /* HistoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17201A26A2931F009B6182 /* HistoryDataModel.swift */; };
+		5C17201D26A2932C009B6182 /* HistoryLinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17201C26A2932C009B6182 /* HistoryLinkModel.swift */; };
+		5C17201F26A29E31009B6182 /* HistoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17201E26A29E31009B6182 /* HistoryDetailVC.swift */; };
+		5C17B7CA26A3DA730092196E /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17B7C926A3DA730092196E /* OnboardVC.swift */; };
+		5C17B7CD26A3DE9D0092196E /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17B7CC26A3DE9D0092196E /* OnboardingSlide.swift */; };
+		5C1C13EB269C45F2006DC241 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13CC269C45EF006DC241 /* SF-Pro-Display-Ultralight.otf */; };
+		5C1C13EC269C45F2006DC241 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13CD269C45F0006DC241 /* SF-Pro-Text-Heavy.otf */; };
+		5C1C13ED269C45F2006DC241 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13CE269C45F0006DC241 /* SF-Pro-Display-Black.otf */; };
+		5C1C13EE269C45F2006DC241 /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13CF269C45F0006DC241 /* SF-Pro-Display-SemiboldItalic.otf */; };
+		5C1C13EF269C45F2006DC241 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D0269C45F0006DC241 /* SF-Pro-Display-RegularItalic.otf */; };
+		5C1C13F0269C45F2006DC241 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D1269C45F0006DC241 /* SF-Pro-Text-LightItalic.otf */; };
+		5C1C13F1269C45F2006DC241 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D2269C45F0006DC241 /* SF-Pro-Display-Regular.otf */; };
+		5C1C13F2269C45F2006DC241 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D3269C45F0006DC241 /* SF-Pro-Display-UltralightItalic.otf */; };
+		5C1C13F3269C45F2006DC241 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D4269C45F0006DC241 /* SF-Pro-Text-Light.otf */; };
+		5C1C13F4269C45F2006DC241 /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D5269C45F0006DC241 /* SF-Pro-Display-BoldItalic.otf */; };
+		5C1C13F5269C45F2006DC241 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D6269C45F0006DC241 /* SF-Pro-Text-Regular.otf */; };
+		5C1C13F6269C45F2006DC241 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D7269C45F0006DC241 /* SF-Pro-Text-Bold.otf */; };
+		5C1C13F7269C45F2006DC241 /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D8269C45F0006DC241 /* SFUIText-Regular.otf */; };
+		5C1C13F8269C45F2006DC241 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13D9269C45F0006DC241 /* SF-Pro-Text-Semibold.otf */; };
+		5C1C13F9269C45F2006DC241 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13DA269C45F0006DC241 /* SF-Pro-Text-Medium.otf */; };
+		5C1C13FA269C45F2006DC241 /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13DB269C45F0006DC241 /* SF-Pro-Text-BoldItalic.otf */; };
+		5C1C13FB269C45F2006DC241 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13DC269C45F1006DC241 /* SF-Pro-Display-Semibold.otf */; };
+		5C1C13FC269C45F2006DC241 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13DD269C45F1006DC241 /* SF-Pro-Text-RegularItalic.otf */; };
+		5C1C13FD269C45F2006DC241 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13DE269C45F1006DC241 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		5C1C13FE269C45F2006DC241 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13DF269C45F1006DC241 /* SF-Pro-Display-Medium.otf */; };
+		5C1C13FF269C45F2006DC241 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E0269C45F1006DC241 /* SF-Pro-Text-MediumItalic.otf */; };
+		5C1C1400269C45F2006DC241 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E1269C45F1006DC241 /* SF-Pro-Display-LightItalic.otf */; };
+		5C1C1401269C45F2006DC241 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E2269C45F1006DC241 /* SF-Pro-Display-Bold.otf */; };
+		5C1C1402269C45F2006DC241 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E3269C45F1006DC241 /* SF-Pro-Display-Heavy.otf */; };
+		5C1C1403269C45F2006DC241 /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E4269C45F1006DC241 /* SF-Pro-Display-MediumItalic.otf */; };
+		5C1C1404269C45F2006DC241 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E5269C45F1006DC241 /* SF-Pro-Display-Light.otf */; };
+		5C1C1405269C45F2006DC241 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E6269C45F1006DC241 /* SF-Pro-Display-Thin.otf */; };
+		5C1C1406269C45F2006DC241 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E7269C45F1006DC241 /* SF-Pro-Text-HeavyItalic.otf */; };
+		5C1C1407269C45F2006DC241 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E8269C45F1006DC241 /* SF-Pro-Display-HeavyItalic.otf */; };
+		5C1C1408269C45F2006DC241 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13E9269C45F2006DC241 /* SF-Pro-Display-ThinItalic.otf */; };
+		5C1C1409269C45F2006DC241 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C13EA269C45F2006DC241 /* SF-Pro-Display-BlackItalic.otf */; };
+		5C3122FB26A12C20008917B4 /* RocketDetailImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3122FA26A12C20008917B4 /* RocketDetailImageVC.swift */; };
+		5C3BE197269C21E70080267B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE196269C21E70080267B /* AppDelegate.swift */; };
+		5C3BE199269C21E70080267B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE198269C21E70080267B /* SceneDelegate.swift */; };
+		5C3BE19E269C21E70080267B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE19C269C21E70080267B /* Main.storyboard */; };
+		5C3BE1A0269C21EC0080267B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE19F269C21EC0080267B /* Assets.xcassets */; };
+		5C3BE1A3269C21EC0080267B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE1A1269C21EC0080267B /* LaunchScreen.storyboard */; };
+		5C3BE1BD269C23CB0080267B /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE1BC269C23CB0080267B /* LaunchVC.swift */; };
+		5C3BE1BF269C377F0080267B /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE1BE269C377F0080267B /* HistoryVC.swift */; };
+		5C3BE1C1269C379D0080267B /* MissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE1C0269C379D0080267B /* MissionVC.swift */; };
+		5C3BE1C3269C37B00080267B /* RocketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE1C2269C37B00080267B /* RocketsVC.swift */; };
+		5C8FA53B26A3028500ED45CA /* MissionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA53A26A3028500ED45CA /* MissionDetailVC.swift */; };
+		5C8FA53E26A3033B00ED45CA /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA53C26A3033B00ED45CA /* MissionTableViewCell.swift */; };
+		5C8FA53F26A3033B00ED45CA /* MissionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C8FA53D26A3033B00ED45CA /* MissionTableViewCell.xib */; };
+		5C8FA54426A304A300ED45CA /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA54326A304A300ED45CA /* MissionModel.swift */; };
+		5C98FD33269E7E6B008A059C /* RCustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98FD32269E7E6B008A059C /* RCustomClass.swift */; };
+		5CA2BEB1269D280E00CA7A14 /* SpaceXLaunchRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2BEB0269D280E00CA7A14 /* SpaceXLaunchRocket.swift */; };
+		5CA2BEB3269D281F00CA7A14 /* SpaceXLaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2BEB2269D281F00CA7A14 /* SpaceXLaunchSite.swift */; };
+		5CA2BEB5269D283100CA7A14 /* SpaceXLaunchLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2BEB4269D283100CA7A14 /* SpaceXLaunchLinks.swift */; };
+		5CA432FD269FD20000833635 /* RocketDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA432FC269FD1FF00833635 /* RocketDetailVC.swift */; };
+		5CD10FD926A11D4600A1A893 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD10FD726A11D4600A1A893 /* ImageCollectionViewCell.swift */; };
+		5CD10FDA26A11D4600A1A893 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD10FD826A11D4600A1A893 /* ImageCollectionViewCell.xib */; };
+		5CD25E44269DDB520095D059 /* LaunchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD25E43269DDB520095D059 /* LaunchDetailVC.swift */; };
+		5CD72D8F269C51D3007B3A4D /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD72D8D269C51D3007B3A4D /* CategoryCollectionViewCell.swift */; };
+		5CD72D90269C51D3007B3A4D /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD72D8E269C51D3007B3A4D /* CategoryCollectionViewCell.xib */; };
+		5CD72D93269C51EE007B3A4D /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD72D91269C51EE007B3A4D /* LaunchTableViewCell.swift */; };
+		5CD72D94269C51EE007B3A4D /* LaunchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD72D92269C51EE007B3A4D /* LaunchTableViewCell.xib */; };
+		5CD7BC82269F2D28001C5313 /* SpaceXRocketEnginesISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC76269F2D27001C5313 /* SpaceXRocketEnginesISP.swift */; };
+		5CD7BC83269F2D28001C5313 /* SpaceXRocketPayloadWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC77269F2D27001C5313 /* SpaceXRocketPayloadWeight.swift */; };
+		5CD7BC84269F2D28001C5313 /* SpaceXRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC78269F2D27001C5313 /* SpaceXRocket.swift */; };
+		5CD7BC85269F2D28001C5313 /* SpaceXRocketSecondStagePayloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC79269F2D27001C5313 /* SpaceXRocketSecondStagePayloads.swift */; };
+		5CD7BC86269F2D28001C5313 /* SpaceXRocketSecondStagePaylodsCompositeFairings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC7A269F2D27001C5313 /* SpaceXRocketSecondStagePaylodsCompositeFairings.swift */; };
+		5CD7BC87269F2D28001C5313 /* SpaceXRocketSecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC7B269F2D27001C5313 /* SpaceXRocketSecondStage.swift */; };
+		5CD7BC88269F2D28001C5313 /* SpaceXRocketSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC7C269F2D27001C5313 /* SpaceXRocketSize.swift */; };
+		5CD7BC89269F2D28001C5313 /* SpaceXRocketMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC7D269F2D27001C5313 /* SpaceXRocketMass.swift */; };
+		5CD7BC8A269F2D28001C5313 /* SpaceXRocketEngines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC7E269F2D27001C5313 /* SpaceXRocketEngines.swift */; };
+		5CD7BC8B269F2D28001C5313 /* SpaceXRocketThrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC7F269F2D27001C5313 /* SpaceXRocketThrust.swift */; };
+		5CD7BC8C269F2D28001C5313 /* SpaceXRocketFirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC80269F2D28001C5313 /* SpaceXRocketFirstStage.swift */; };
+		5CD7BC8D269F2D28001C5313 /* SpaceXRocketLandingLegs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC81269F2D28001C5313 /* SpaceXRocketLandingLegs.swift */; };
+		5CD7BC90269F3E4E001C5313 /* RocketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7BC8E269F3E4E001C5313 /* RocketTableViewCell.swift */; };
+		5CD7BC91269F3E4E001C5313 /* RocketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7BC8F269F3E4E001C5313 /* RocketTableViewCell.xib */; };
+		62B924B78A82BE01CD9C7C71 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B71BE1F4EC30810C5875D2 /* Pods_SpaceX.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29B71BE1F4EC30810C5875D2 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5877AE614E56CFB26AE1F16E /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		5C03C4CA26A3E88B0042C244 /* OnboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C0E2B22269C701E0037C3EC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5C0E2B24269C702A0037C3EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5C0E2B28269C80E10037C3EC /* LaunchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDataModel.swift; sourceTree = "<group>"; };
+		5C0E2B33269C81D20037C3EC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5C0E2B37269C824B0037C3EC /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		5C0E2B39269C828A0037C3EC /* DateFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormats.swift; sourceTree = "<group>"; };
+		5C17201526A26D3E009B6182 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		5C17201626A26D3E009B6182 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		5C17201A26A2931F009B6182 /* HistoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataModel.swift; sourceTree = "<group>"; };
+		5C17201C26A2932C009B6182 /* HistoryLinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLinkModel.swift; sourceTree = "<group>"; };
+		5C17201E26A29E31009B6182 /* HistoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailVC.swift; sourceTree = "<group>"; };
+		5C17B7C926A3DA730092196E /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
+		5C17B7CC26A3DE9D0092196E /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		5C1C13CC269C45EF006DC241 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		5C1C13CD269C45F0006DC241 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		5C1C13CE269C45F0006DC241 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		5C1C13CF269C45F0006DC241 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		5C1C13D0269C45F0006DC241 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		5C1C13D1269C45F0006DC241 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		5C1C13D2269C45F0006DC241 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		5C1C13D3269C45F0006DC241 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		5C1C13D4269C45F0006DC241 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		5C1C13D5269C45F0006DC241 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		5C1C13D6269C45F0006DC241 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		5C1C13D7269C45F0006DC241 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		5C1C13D8269C45F0006DC241 /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
+		5C1C13D9269C45F0006DC241 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		5C1C13DA269C45F0006DC241 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		5C1C13DB269C45F0006DC241 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		5C1C13DC269C45F1006DC241 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		5C1C13DD269C45F1006DC241 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		5C1C13DE269C45F1006DC241 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		5C1C13DF269C45F1006DC241 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		5C1C13E0269C45F1006DC241 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		5C1C13E1269C45F1006DC241 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		5C1C13E2269C45F1006DC241 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		5C1C13E3269C45F1006DC241 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		5C1C13E4269C45F1006DC241 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		5C1C13E5269C45F1006DC241 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		5C1C13E6269C45F1006DC241 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		5C1C13E7269C45F1006DC241 /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		5C1C13E8269C45F1006DC241 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		5C1C13E9269C45F2006DC241 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		5C1C13EA269C45F2006DC241 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		5C3122FA26A12C20008917B4 /* RocketDetailImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailImageVC.swift; sourceTree = "<group>"; };
+		5C3BE193269C21E70080267B /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3BE196269C21E70080267B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C3BE198269C21E70080267B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5C3BE19D269C21E70080267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C3BE19F269C21EC0080267B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C3BE1A2269C21EC0080267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C3BE1A4269C21EC0080267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3BE1BC269C23CB0080267B /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		5C3BE1BE269C377F0080267B /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		5C3BE1C0269C379D0080267B /* MissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionVC.swift; sourceTree = "<group>"; };
+		5C3BE1C2269C37B00080267B /* RocketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsVC.swift; sourceTree = "<group>"; };
+		5C8FA53A26A3028500ED45CA /* MissionDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailVC.swift; sourceTree = "<group>"; };
+		5C8FA53C26A3033B00ED45CA /* MissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		5C8FA53D26A3033B00ED45CA /* MissionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionTableViewCell.xib; sourceTree = "<group>"; };
+		5C8FA54326A304A300ED45CA /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionModel.swift; path = SpaceX/Controllers/Missions/MissionModel.swift; sourceTree = SOURCE_ROOT; };
+		5C98FD32269E7E6B008A059C /* RCustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCustomClass.swift; sourceTree = "<group>"; };
+		5CA2BEB0269D280E00CA7A14 /* SpaceXLaunchRocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchRocket.swift; sourceTree = "<group>"; };
+		5CA2BEB2269D281F00CA7A14 /* SpaceXLaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchSite.swift; sourceTree = "<group>"; };
+		5CA2BEB4269D283100CA7A14 /* SpaceXLaunchLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchLinks.swift; sourceTree = "<group>"; };
+		5CA432FC269FD1FF00833635 /* RocketDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailVC.swift; sourceTree = "<group>"; };
+		5CD10FD726A11D4600A1A893 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CD10FD826A11D4600A1A893 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CD25E43269DDB520095D059 /* LaunchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailVC.swift; sourceTree = "<group>"; };
+		5CD72D8D269C51D3007B3A4D /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CD72D8E269C51D3007B3A4D /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CD72D91269C51EE007B3A4D /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+		5CD72D92269C51EE007B3A4D /* LaunchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchTableViewCell.xib; sourceTree = "<group>"; };
+		5CD7BC76269F2D27001C5313 /* SpaceXRocketEnginesISP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketEnginesISP.swift; sourceTree = "<group>"; };
+		5CD7BC77269F2D27001C5313 /* SpaceXRocketPayloadWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketPayloadWeight.swift; sourceTree = "<group>"; };
+		5CD7BC78269F2D27001C5313 /* SpaceXRocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocket.swift; sourceTree = "<group>"; };
+		5CD7BC79269F2D27001C5313 /* SpaceXRocketSecondStagePayloads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketSecondStagePayloads.swift; sourceTree = "<group>"; };
+		5CD7BC7A269F2D27001C5313 /* SpaceXRocketSecondStagePaylodsCompositeFairings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketSecondStagePaylodsCompositeFairings.swift; sourceTree = "<group>"; };
+		5CD7BC7B269F2D27001C5313 /* SpaceXRocketSecondStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketSecondStage.swift; sourceTree = "<group>"; };
+		5CD7BC7C269F2D27001C5313 /* SpaceXRocketSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketSize.swift; sourceTree = "<group>"; };
+		5CD7BC7D269F2D27001C5313 /* SpaceXRocketMass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketMass.swift; sourceTree = "<group>"; };
+		5CD7BC7E269F2D27001C5313 /* SpaceXRocketEngines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketEngines.swift; sourceTree = "<group>"; };
+		5CD7BC7F269F2D27001C5313 /* SpaceXRocketThrust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketThrust.swift; sourceTree = "<group>"; };
+		5CD7BC80269F2D28001C5313 /* SpaceXRocketFirstStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketFirstStage.swift; sourceTree = "<group>"; };
+		5CD7BC81269F2D28001C5313 /* SpaceXRocketLandingLegs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXRocketLandingLegs.swift; sourceTree = "<group>"; };
+		5CD7BC8E269F3E4E001C5313 /* RocketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketTableViewCell.swift; sourceTree = "<group>"; };
+		5CD7BC8F269F3E4E001C5313 /* RocketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RocketTableViewCell.xib; sourceTree = "<group>"; };
+		F5EE4666A49B5E2CE2D8D870 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C3BE190269C21E70080267B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B924B78A82BE01CD9C7C71 /* Pods_SpaceX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C0E2B26269C703E0037C3EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C17B7CB26A3DE770092196E /* onboardSlide */,
+				5C8FA54026A3045F00ED45CA /* Missions */,
+				5C17201926A29300009B6182 /* History */,
+				5CD7BC75269F2CFA001C5313 /* Rocket */,
+				5C0E2B27269C80C20037C3EC /* Launch */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C0E2B27269C80C20037C3EC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E2B28269C80E10037C3EC /* LaunchDataModel.swift */,
+				5CA2BEB0269D280E00CA7A14 /* SpaceXLaunchRocket.swift */,
+				5CA2BEB2269D281F00CA7A14 /* SpaceXLaunchSite.swift */,
+				5CA2BEB4269D283100CA7A14 /* SpaceXLaunchLinks.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5C0E2B36269C82380037C3EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E2B37269C824B0037C3EC /* Date + Extensions.swift */,
+				5C0E2B39269C828A0037C3EC /* DateFormats.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C17201926A29300009B6182 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5C17201A26A2931F009B6182 /* HistoryDataModel.swift */,
+				5C17201C26A2932C009B6182 /* HistoryLinkModel.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5C17B7C826A3DA4A0092196E /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C17B7C926A3DA730092196E /* OnboardVC.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		5C17B7CB26A3DE770092196E /* onboardSlide */ = {
+			isa = PBXGroup;
+			children = (
+				5C17B7CC26A3DE9D0092196E /* OnboardingSlide.swift */,
+			);
+			path = onboardSlide;
+			sourceTree = "<group>";
+		};
+		5C1C13BD269C4426006DC241 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C13CE269C45F0006DC241 /* SF-Pro-Display-Black.otf */,
+				5C1C13EA269C45F2006DC241 /* SF-Pro-Display-BlackItalic.otf */,
+				5C1C13E2269C45F1006DC241 /* SF-Pro-Display-Bold.otf */,
+				5C1C13D5269C45F0006DC241 /* SF-Pro-Display-BoldItalic.otf */,
+				5C1C13E3269C45F1006DC241 /* SF-Pro-Display-Heavy.otf */,
+				5C1C13E8269C45F1006DC241 /* SF-Pro-Display-HeavyItalic.otf */,
+				5C1C13E5269C45F1006DC241 /* SF-Pro-Display-Light.otf */,
+				5C1C13E1269C45F1006DC241 /* SF-Pro-Display-LightItalic.otf */,
+				5C1C13DF269C45F1006DC241 /* SF-Pro-Display-Medium.otf */,
+				5C1C13E4269C45F1006DC241 /* SF-Pro-Display-MediumItalic.otf */,
+				5C1C13D2269C45F0006DC241 /* SF-Pro-Display-Regular.otf */,
+				5C1C13D0269C45F0006DC241 /* SF-Pro-Display-RegularItalic.otf */,
+				5C1C13DC269C45F1006DC241 /* SF-Pro-Display-Semibold.otf */,
+				5C1C13CF269C45F0006DC241 /* SF-Pro-Display-SemiboldItalic.otf */,
+				5C1C13E6269C45F1006DC241 /* SF-Pro-Display-Thin.otf */,
+				5C1C13E9269C45F2006DC241 /* SF-Pro-Display-ThinItalic.otf */,
+				5C1C13CC269C45EF006DC241 /* SF-Pro-Display-Ultralight.otf */,
+				5C1C13D3269C45F0006DC241 /* SF-Pro-Display-UltralightItalic.otf */,
+				5C1C13D7269C45F0006DC241 /* SF-Pro-Text-Bold.otf */,
+				5C1C13DB269C45F0006DC241 /* SF-Pro-Text-BoldItalic.otf */,
+				5C1C13CD269C45F0006DC241 /* SF-Pro-Text-Heavy.otf */,
+				5C1C13E7269C45F1006DC241 /* SF-Pro-Text-HeavyItalic.otf */,
+				5C1C13D4269C45F0006DC241 /* SF-Pro-Text-Light.otf */,
+				5C1C13D1269C45F0006DC241 /* SF-Pro-Text-LightItalic.otf */,
+				5C1C13DA269C45F0006DC241 /* SF-Pro-Text-Medium.otf */,
+				5C1C13E0269C45F1006DC241 /* SF-Pro-Text-MediumItalic.otf */,
+				5C1C13D6269C45F0006DC241 /* SF-Pro-Text-Regular.otf */,
+				5C1C13DD269C45F1006DC241 /* SF-Pro-Text-RegularItalic.otf */,
+				5C1C13D9269C45F0006DC241 /* SF-Pro-Text-Semibold.otf */,
+				5C1C13DE269C45F1006DC241 /* SF-Pro-Text-SemiboldItalic.otf */,
+				5C1C13D8269C45F0006DC241 /* SFUIText-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5C3BE18A269C21E70080267B = {
+			isa = PBXGroup;
+			children = (
+				5C3BE195269C21E70080267B /* SpaceX */,
+				5C3BE194269C21E70080267B /* Products */,
+				6B6ABA4500BCEAD6B65C2580 /* Pods */,
+				DF95E9956037EFBB2D9EC606 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C3BE194269C21E70080267B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE193269C21E70080267B /* SpaceX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C3BE195269C21E70080267B /* SpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E2B36269C82380037C3EC /* Extensions */,
+				5C3BE1AB269C22100080267B /* Custom Class */,
+				5C3BE1AA269C220A0080267B /* API */,
+				5C3BE1B3269C22630080267B /* Controllers */,
+				5C3BE1B2269C225A0080267B /* Global */,
+				5C3BE1B1269C22540080267B /* Helpers */,
+				5C3BE1B0269C22460080267B /* Utility */,
+				5C3BE1AF269C223C0080267B /* Supporting Files */,
+				5C3BE1AE269C22350080267B /* Startup */,
+				5C3BE1AD269C222B0080267B /* Views */,
+				5C3BE1AC269C221F0080267B /* Resources */,
+			);
+			path = SpaceX;
+			sourceTree = "<group>";
+		};
+		5C3BE1AA269C220A0080267B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E2B24269C702A0037C3EC /* Constants.swift */,
+				5C0E2B22269C701E0037C3EC /* APIClient.swift */,
+				5C0E2B26269C703E0037C3EC /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5C3BE1AB269C22100080267B /* Custom Class */ = {
+			isa = PBXGroup;
+			children = (
+				5C98FD32269E7E6B008A059C /* RCustomClass.swift */,
+			);
+			path = "Custom Class";
+			sourceTree = "<group>";
+		};
+		5C3BE1AC269C221F0080267B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1BB269C23160080267B /* Image */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C3BE1AD269C222B0080267B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1BA269C22E50080267B /* Collectionviews */,
+				5C3BE1B9269C22DD0080267B /* Tableviews */,
+				5C3BE1B8269C22D10080267B /* Storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C3BE1AE269C22350080267B /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1A1269C21EC0080267B /* LaunchScreen.storyboard */,
+				5C3BE196269C21E70080267B /* AppDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		5C3BE1AF269C223C0080267B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1A4269C21EC0080267B /* Info.plist */,
+				5C3BE198269C21E70080267B /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C3BE1B0269C22460080267B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C13BD269C4426006DC241 /* Fonts */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5C3BE1B1269C22540080267B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5C3BE1B2269C225A0080267B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E2B33269C81D20037C3EC /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		5C3BE1B3269C22630080267B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C17B7C826A3DA4A0092196E /* Onboard */,
+				5C3BE1B7269C22C80080267B /* History */,
+				5C3BE1B6269C22AA0080267B /* Missions */,
+				5C3BE1B5269C22A20080267B /* Rockets */,
+				5C3BE1B4269C22990080267B /* Launches */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C3BE1B4269C22990080267B /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1BC269C23CB0080267B /* LaunchVC.swift */,
+				5CD25E43269DDB520095D059 /* LaunchDetailVC.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		5C3BE1B5269C22A20080267B /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1C2269C37B00080267B /* RocketsVC.swift */,
+				5CA432FC269FD1FF00833635 /* RocketDetailVC.swift */,
+				5C3122FA26A12C20008917B4 /* RocketDetailImageVC.swift */,
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		5C3BE1B6269C22AA0080267B /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1C0269C379D0080267B /* MissionVC.swift */,
+				5C8FA53A26A3028500ED45CA /* MissionDetailVC.swift */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
+		5C3BE1B7269C22C80080267B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE1BE269C377F0080267B /* HistoryVC.swift */,
+				5C17201E26A29E31009B6182 /* HistoryDetailVC.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5C3BE1B8269C22D10080267B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE19C269C21E70080267B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C3BE1B9269C22DD0080267B /* Tableviews */ = {
+			isa = PBXGroup;
+			children = (
+				5CD72D91269C51EE007B3A4D /* LaunchTableViewCell.swift */,
+				5CD72D92269C51EE007B3A4D /* LaunchTableViewCell.xib */,
+				5CD7BC8E269F3E4E001C5313 /* RocketTableViewCell.swift */,
+				5CD7BC8F269F3E4E001C5313 /* RocketTableViewCell.xib */,
+				5C17201526A26D3E009B6182 /* HistoryTableViewCell.swift */,
+				5C17201626A26D3E009B6182 /* HistoryTableViewCell.xib */,
+				5C8FA53C26A3033B00ED45CA /* MissionTableViewCell.swift */,
+				5C8FA53D26A3033B00ED45CA /* MissionTableViewCell.xib */,
+			);
+			path = Tableviews;
+			sourceTree = "<group>";
+		};
+		5C3BE1BA269C22E50080267B /* Collectionviews */ = {
+			isa = PBXGroup;
+			children = (
+				5CD72D8D269C51D3007B3A4D /* CategoryCollectionViewCell.swift */,
+				5CD72D8E269C51D3007B3A4D /* CategoryCollectionViewCell.xib */,
+				5CD10FD726A11D4600A1A893 /* ImageCollectionViewCell.swift */,
+				5CD10FD826A11D4600A1A893 /* ImageCollectionViewCell.xib */,
+				5C03C4CA26A3E88B0042C244 /* OnboardCollectionViewCell.swift */,
+			);
+			path = Collectionviews;
+			sourceTree = "<group>";
+		};
+		5C3BE1BB269C23160080267B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE19F269C21EC0080267B /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		5C8FA54026A3045F00ED45CA /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				5C8FA54326A304A300ED45CA /* MissionModel.swift */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
+		5CD7BC75269F2CFA001C5313 /* Rocket */ = {
+			isa = PBXGroup;
+			children = (
+				5CD7BC78269F2D27001C5313 /* SpaceXRocket.swift */,
+				5CD7BC7E269F2D27001C5313 /* SpaceXRocketEngines.swift */,
+				5CD7BC76269F2D27001C5313 /* SpaceXRocketEnginesISP.swift */,
+				5CD7BC80269F2D28001C5313 /* SpaceXRocketFirstStage.swift */,
+				5CD7BC81269F2D28001C5313 /* SpaceXRocketLandingLegs.swift */,
+				5CD7BC7D269F2D27001C5313 /* SpaceXRocketMass.swift */,
+				5CD7BC77269F2D27001C5313 /* SpaceXRocketPayloadWeight.swift */,
+				5CD7BC7B269F2D27001C5313 /* SpaceXRocketSecondStage.swift */,
+				5CD7BC79269F2D27001C5313 /* SpaceXRocketSecondStagePayloads.swift */,
+				5CD7BC7A269F2D27001C5313 /* SpaceXRocketSecondStagePaylodsCompositeFairings.swift */,
+				5CD7BC7C269F2D27001C5313 /* SpaceXRocketSize.swift */,
+				5CD7BC7F269F2D27001C5313 /* SpaceXRocketThrust.swift */,
+			);
+			path = Rocket;
+			sourceTree = "<group>";
+		};
+		6B6ABA4500BCEAD6B65C2580 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5EE4666A49B5E2CE2D8D870 /* Pods-SpaceX.debug.xcconfig */,
+				5877AE614E56CFB26AE1F16E /* Pods-SpaceX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF95E9956037EFBB2D9EC606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B71BE1F4EC30810C5875D2 /* Pods_SpaceX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C3BE192269C21E70080267B /* SpaceX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C3BE1A7269C21EC0080267B /* Build configuration list for PBXNativeTarget "SpaceX" */;
+			buildPhases = (
+				09E97A04505E54CC98C42429 /* [CP] Check Pods Manifest.lock */,
+				5C3BE18F269C21E70080267B /* Sources */,
+				5C3BE190269C21E70080267B /* Frameworks */,
+				5C3BE191269C21E70080267B /* Resources */,
+				983452786FD9CFB85D8BEF52 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceX;
+			productName = SpaceX;
+			productReference = 5C3BE193269C21E70080267B /* SpaceX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C3BE18B269C21E70080267B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5C3BE192269C21E70080267B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 5C3BE18E269C21E70080267B /* Build configuration list for PBXProject "SpaceX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C3BE18A269C21E70080267B;
+			productRefGroup = 5C3BE194269C21E70080267B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C3BE192269C21E70080267B /* SpaceX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C3BE191269C21E70080267B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1C13FF269C45F2006DC241 /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				5CD72D90269C51D3007B3A4D /* CategoryCollectionViewCell.xib in Resources */,
+				5C1C1409269C45F2006DC241 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				5C1C13EE269C45F2006DC241 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				5CD10FDA26A11D4600A1A893 /* ImageCollectionViewCell.xib in Resources */,
+				5C1C13F0269C45F2006DC241 /* SF-Pro-Text-LightItalic.otf in Resources */,
+				5C1C13F3269C45F2006DC241 /* SF-Pro-Text-Light.otf in Resources */,
+				5C1C1406269C45F2006DC241 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				5C1C1403269C45F2006DC241 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				5C3BE1A3269C21EC0080267B /* LaunchScreen.storyboard in Resources */,
+				5C1C13FC269C45F2006DC241 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				5C3BE1A0269C21EC0080267B /* Assets.xcassets in Resources */,
+				5C1C1400269C45F2006DC241 /* SF-Pro-Display-LightItalic.otf in Resources */,
+				5C1C13EC269C45F2006DC241 /* SF-Pro-Text-Heavy.otf in Resources */,
+				5C1C13F7269C45F2006DC241 /* SFUIText-Regular.otf in Resources */,
+				5C1C13FD269C45F2006DC241 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				5C1C13F5269C45F2006DC241 /* SF-Pro-Text-Regular.otf in Resources */,
+				5C1C13F9269C45F2006DC241 /* SF-Pro-Text-Medium.otf in Resources */,
+				5C1C1407269C45F2006DC241 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				5CD72D94269C51EE007B3A4D /* LaunchTableViewCell.xib in Resources */,
+				5C1C13F8269C45F2006DC241 /* SF-Pro-Text-Semibold.otf in Resources */,
+				5C1C13FE269C45F2006DC241 /* SF-Pro-Display-Medium.otf in Resources */,
+				5C8FA53F26A3033B00ED45CA /* MissionTableViewCell.xib in Resources */,
+				5C1C13FA269C45F2006DC241 /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				5C1C13EF269C45F2006DC241 /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				5C1C1402269C45F2006DC241 /* SF-Pro-Display-Heavy.otf in Resources */,
+				5CD7BC91269F3E4E001C5313 /* RocketTableViewCell.xib in Resources */,
+				5C1C13FB269C45F2006DC241 /* SF-Pro-Display-Semibold.otf in Resources */,
+				5C1C1405269C45F2006DC241 /* SF-Pro-Display-Thin.otf in Resources */,
+				5C1C13F4269C45F2006DC241 /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				5C3BE19E269C21E70080267B /* Main.storyboard in Resources */,
+				5C1C1401269C45F2006DC241 /* SF-Pro-Display-Bold.otf in Resources */,
+				5C1C13F2269C45F2006DC241 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				5C1C1404269C45F2006DC241 /* SF-Pro-Display-Light.otf in Resources */,
+				5C1C13F6269C45F2006DC241 /* SF-Pro-Text-Bold.otf in Resources */,
+				5C17201826A26D3E009B6182 /* HistoryTableViewCell.xib in Resources */,
+				5C1C13EB269C45F2006DC241 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				5C1C13F1269C45F2006DC241 /* SF-Pro-Display-Regular.otf in Resources */,
+				5C1C1408269C45F2006DC241 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				5C1C13ED269C45F2006DC241 /* SF-Pro-Display-Black.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09E97A04505E54CC98C42429 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		983452786FD9CFB85D8BEF52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceX/Pods-SpaceX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C3BE18F269C21E70080267B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD10FD926A11D4600A1A893 /* ImageCollectionViewCell.swift in Sources */,
+				5C0E2B3A269C828A0037C3EC /* DateFormats.swift in Sources */,
+				5CD7BC83269F2D28001C5313 /* SpaceXRocketPayloadWeight.swift in Sources */,
+				5C3BE1C3269C37B00080267B /* RocketsVC.swift in Sources */,
+				5CD7BC8C269F2D28001C5313 /* SpaceXRocketFirstStage.swift in Sources */,
+				5C0E2B25269C702A0037C3EC /* Constants.swift in Sources */,
+				5C3122FB26A12C20008917B4 /* RocketDetailImageVC.swift in Sources */,
+				5C3BE197269C21E70080267B /* AppDelegate.swift in Sources */,
+				5CD7BC84269F2D28001C5313 /* SpaceXRocket.swift in Sources */,
+				5C8FA53E26A3033B00ED45CA /* MissionTableViewCell.swift in Sources */,
+				5CD7BC86269F2D28001C5313 /* SpaceXRocketSecondStagePaylodsCompositeFairings.swift in Sources */,
+				5C17B7CA26A3DA730092196E /* OnboardVC.swift in Sources */,
+				5CD7BC82269F2D28001C5313 /* SpaceXRocketEnginesISP.swift in Sources */,
+				5C03C4CB26A3E88B0042C244 /* OnboardCollectionViewCell.swift in Sources */,
+				5C17201B26A2931F009B6182 /* HistoryDataModel.swift in Sources */,
+				5CD7BC8B269F2D28001C5313 /* SpaceXRocketThrust.swift in Sources */,
+				5CD7BC85269F2D28001C5313 /* SpaceXRocketSecondStagePayloads.swift in Sources */,
+				5C17201D26A2932C009B6182 /* HistoryLinkModel.swift in Sources */,
+				5C0E2B23269C701E0037C3EC /* APIClient.swift in Sources */,
+				5CD7BC8D269F2D28001C5313 /* SpaceXRocketLandingLegs.swift in Sources */,
+				5CD72D93269C51EE007B3A4D /* LaunchTableViewCell.swift in Sources */,
+				5C98FD33269E7E6B008A059C /* RCustomClass.swift in Sources */,
+				5CD25E44269DDB520095D059 /* LaunchDetailVC.swift in Sources */,
+				5C17201F26A29E31009B6182 /* HistoryDetailVC.swift in Sources */,
+				5C17201726A26D3E009B6182 /* HistoryTableViewCell.swift in Sources */,
+				5CD7BC8A269F2D28001C5313 /* SpaceXRocketEngines.swift in Sources */,
+				5C0E2B34269C81D20037C3EC /* Global.swift in Sources */,
+				5CD7BC87269F2D28001C5313 /* SpaceXRocketSecondStage.swift in Sources */,
+				5C3BE1C1269C379D0080267B /* MissionVC.swift in Sources */,
+				5C3BE1BF269C377F0080267B /* HistoryVC.swift in Sources */,
+				5CA2BEB5269D283100CA7A14 /* SpaceXLaunchLinks.swift in Sources */,
+				5CA432FD269FD20000833635 /* RocketDetailVC.swift in Sources */,
+				5CA2BEB1269D280E00CA7A14 /* SpaceXLaunchRocket.swift in Sources */,
+				5C17B7CD26A3DE9D0092196E /* OnboardingSlide.swift in Sources */,
+				5C8FA53B26A3028500ED45CA /* MissionDetailVC.swift in Sources */,
+				5C8FA54426A304A300ED45CA /* MissionModel.swift in Sources */,
+				5C3BE199269C21E70080267B /* SceneDelegate.swift in Sources */,
+				5CD7BC88269F2D28001C5313 /* SpaceXRocketSize.swift in Sources */,
+				5CD72D8F269C51D3007B3A4D /* CategoryCollectionViewCell.swift in Sources */,
+				5CD7BC89269F2D28001C5313 /* SpaceXRocketMass.swift in Sources */,
+				5C0E2B29269C80E10037C3EC /* LaunchDataModel.swift in Sources */,
+				5C3BE1BD269C23CB0080267B /* LaunchVC.swift in Sources */,
+				5CA2BEB3269D281F00CA7A14 /* SpaceXLaunchSite.swift in Sources */,
+				5C0E2B38269C824B0037C3EC /* Date + Extensions.swift in Sources */,
+				5CD7BC90269F3E4E001C5313 /* RocketTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C3BE19C269C21E70080267B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C3BE19D269C21E70080267B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C3BE1A1269C21EC0080267B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C3BE1A2269C21EC0080267B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C3BE1A5269C21EC0080267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C3BE1A6269C21EC0080267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C3BE1A8269C21EC0080267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EE4666A49B5E2CE2D8D870 /* Pods-SpaceX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5SSPX3QP3;
+				INFOPLIST_FILE = "SpaceX/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = conquerors.SpaceX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C3BE1A9269C21EC0080267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5877AE614E56CFB26AE1F16E /* Pods-SpaceX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5SSPX3QP3;
+				INFOPLIST_FILE = "SpaceX/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = conquerors.SpaceX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C3BE18E269C21E70080267B /* Build configuration list for PBXProject "SpaceX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C3BE1A5269C21EC0080267B /* Debug */,
+				5C3BE1A6269C21EC0080267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C3BE1A7269C21EC0080267B /* Build configuration list for PBXNativeTarget "SpaceX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C3BE1A8269C21EC0080267B /* Debug */,
+				5C3BE1A9269C21EC0080267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C3BE18B269C21E70080267B /* Project object */;
+}

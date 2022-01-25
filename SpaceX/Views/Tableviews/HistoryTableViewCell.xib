@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryTableViewCell" rowHeight="104" id="KGk-i7-Jjw" customClass="HistoryTableViewCell" customModule="SpaceX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qR-cZ-ndA" customClass="RCustomView" customModule="SpaceX" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="410" height="92.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id1" translatesAutoresizingMaskIntoConstraints="NO" id="W6W-i5-cUf" customClass="RCustomImageView" customModule="SpaceX" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0l6-bp-OaW"/>
+                                    <constraint firstAttribute="height" constant="80" id="VkI-PA-ENd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-3T-iw3">
+                                <rect key="frame" x="104" y="8" width="290" height="76.5"/>
+                                <string key="text">Falcon 1 Flight 5 makes history, becoming the first privately developed liquid fuel rocket to deliver a commercial satellite to Earth orbit.</string>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W6W-i5-cUf" firstAttribute="leading" secondItem="1qR-cZ-ndA" secondAttribute="leading" constant="8" id="0ak-Bh-fUh"/>
+                            <constraint firstAttribute="trailing" secondItem="CSb-3T-iw3" secondAttribute="trailing" constant="16" id="16h-Av-1FL"/>
+                            <constraint firstItem="W6W-i5-cUf" firstAttribute="top" secondItem="1qR-cZ-ndA" secondAttribute="top" constant="8" id="22G-SQ-aEF"/>
+                            <constraint firstAttribute="bottom" secondItem="CSb-3T-iw3" secondAttribute="bottom" constant="8" id="LB8-OG-xyd"/>
+                            <constraint firstItem="CSb-3T-iw3" firstAttribute="top" secondItem="1qR-cZ-ndA" secondAttribute="top" constant="8" id="YCm-ja-HHp"/>
+                            <constraint firstAttribute="bottom" secondItem="W6W-i5-cUf" secondAttribute="bottom" constant="8" id="njQ-qy-s8T"/>
+                            <constraint firstItem="CSb-3T-iw3" firstAttribute="leading" secondItem="W6W-i5-cUf" secondAttribute="trailing" constant="16" id="qZq-3q-pKd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="2" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1qR-cZ-ndA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="CT6-EQ-e0a"/>
+                    <constraint firstAttribute="trailing" secondItem="1qR-cZ-ndA" secondAttribute="trailing" constant="8" id="REA-ci-uYB"/>
+                    <constraint firstItem="1qR-cZ-ndA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ZH2-vG-yIj"/>
+                    <constraint firstAttribute="bottom" secondItem="1qR-cZ-ndA" secondAttribute="bottom" constant="8" id="pif-7D-GqE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LogoimageView" destination="W6W-i5-cUf" id="mHr-y4-NTq"/>
+                <outlet property="baseView" destination="1qR-cZ-ndA" id="EaV-jg-OGQ"/>
+                <outlet property="titleLbl" destination="CSb-3T-iw3" id="Ucd-tp-QnS"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="W6W-i5-cUf">
+            <size key="intrinsicContentSize" width="946" height="710"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="id1" width="946" height="710"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

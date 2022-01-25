@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "laurent-grattepanche-R_EvFLw39jg-unsplash@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "laurent-grattepanche-R_EvFLw39jg-unsplash@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "laurent-grattepanche-R_EvFLw39jg-unsplash@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
